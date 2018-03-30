@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "Child Lock",
+  "version": "1.0",
+  "homepage_url": "https://facebook.com/EH.Shubh",
+
+  "description": "Filters the explicit text from the web",
+
+  "icons": {
+    "48": "child48.png",
+    "96": "child96.png"
+  },
+  "browser_action": {
+  "default_icon": {
+    "19": "child48.png",
+    "38": "child96.png"
+  },
+  "default_title": "ChildLock"
+},
+"content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["ChildLock.js"]
+    }
+  ]
+
+}
